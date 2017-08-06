@@ -1,0 +1,6 @@
+print("begin test iconv lib")
+ICONV = require("iconv")
+UTF_Convertor = ICONV.new("gbk", "utf-8")
+GBK_Convertor = ICONV.new("utf-8", "gbk")
+print(GBK_Convertor:iconv("你好"))
+print("test iconv done")

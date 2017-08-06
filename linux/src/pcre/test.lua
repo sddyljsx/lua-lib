@@ -1,0 +1,6 @@
+print("test pcre lib")
+RE = require("pcre")
+RE.compile("asdf")
+print(RE.match("fdf", "dfsf"))
+print(RE.match("fsf", "dfsf"))
+print("test pcre done")
